@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#141414] text-white antialiased;
+  }
+}
+
+@layer components {
+  /* 按钮样式 */
+  .btn-primary {
+    @apply flex items-center gap-2 px-6 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg font-medium transition-colors;
+  }
+
+  .btn-secondary {
+    @apply flex items-center gap-2 px-6 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg backdrop-blur-sm transition-colors;
+  }
+
+  .btn-icon {
+    @apply p-2 rounded-full hover:bg-white/10 transition-colors;
+  }
+
+  /* 渐变背景 */
+  .gradient-bottom {
+    @apply bg-gradient-to-t from-[#141414] via-[#14141480] to-transparent;
+  }
+
+  .gradient-side {
+    @apply bg-gradient-to-r from-[#141414] via-[#14141480] to-transparent;
+  }
+
+  /* 卡片悬浮效果 */
+  .hover-card {
+    @apply transition-all duration-300 hover:scale-105 hover:z-10;
+  }
+
+  /* 滚动条样式 */
+  .custom-scrollbar {
+    @apply scrollbar scrollbar-track-transparent scrollbar-thumb-white/20 hover:scrollbar-thumb-white/40 scrollbar-w-2;
+  }
+}
+
+@layer utilities {
+  /* 隐藏滚动条 */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* 文本渐变 */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-600;
+  }
+
+  /* 玻璃态效果 */
+  .glass {
+    @apply bg-white/10 backdrop-blur-md;
+  }
+
+  /* 阴影效果 */
+  .shadow-up {
+    @apply shadow-[0_-2px_15px_rgba(0,0,0,0.3)];
+  }
+
+  .shadow-down {
+    @apply shadow-[0_2px_15px_rgba(0,0,0,0.3)];
+  }
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.3s ease-out;
+}
+
+/* Netflix 风格的加载动画 */
+.netflix-loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border: 3px solid #e50914;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: netflix-spin 1s ease-in-out infinite;
+}
+
+@keyframes netflix-spin {
+  to { transform: rotate(360deg); }
+}
