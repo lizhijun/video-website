@@ -1,6 +1,6 @@
 'use client';
 
-import { SubtitleSettings } from '@/utils/subtitleSettings';
+import type { SubtitleSettings } from '@/utils/subtitleSettings';
 
 interface SubtitleSettingsProps {
   settings: SubtitleSettings;

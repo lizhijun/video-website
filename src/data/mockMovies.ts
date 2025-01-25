@@ -38,6 +38,20 @@ export const mockMovies: Movie[] = [
         label: '480P 清晰',
         bitrate: 1000
       }
+    ],
+    subtitles: [
+      {
+        id: 'zh',
+        language: 'zh',
+        label: '中文',
+        url: '/api/subtitles/1/zh.vtt'
+      },
+      {
+        id: 'en',
+        language: 'en',
+        label: 'English',
+        url: '/api/subtitles/1/en.vtt'
+      }
     ]
   },
   {
@@ -74,6 +88,20 @@ export const mockMovies: Movie[] = [
         url: '/videos/shawshank-redemption-480p.mp4',
         label: '480P 清晰',
         bitrate: 1000
+      }
+    ],
+    subtitles: [
+      {
+        id: 'zh',
+        language: 'zh',
+        label: '中文',
+        url: '/api/subtitles/2/zh.vtt'
+      },
+      {
+        id: 'en',
+        language: 'en',
+        label: 'English',
+        url: '/api/subtitles/2/en.vtt'
       }
     ]
   },
@@ -112,6 +140,20 @@ export const mockMovies: Movie[] = [
         label: '480P 清晰',
         bitrate: 1000
       }
+    ],
+    subtitles: [
+      {
+        id: 'zh',
+        language: 'zh',
+        label: '中文',
+        url: '/api/subtitles/3/zh.vtt'
+      },
+      {
+        id: 'en',
+        language: 'en',
+        label: 'English',
+        url: '/api/subtitles/3/en.vtt'
+      }
     ]
   },
   {
@@ -149,6 +191,20 @@ export const mockMovies: Movie[] = [
         label: '480P 清晰',
         bitrate: 1000
       }
+    ],
+    subtitles: [
+      {
+        id: 'zh',
+        language: 'zh',
+        label: '中文',
+        url: '/api/subtitles/4/zh.vtt'
+      },
+      {
+        id: 'en',
+        language: 'en',
+        label: 'English',
+        url: '/api/subtitles/4/en.vtt'
+      }
     ]
   },
   {
@@ -185,6 +241,20 @@ export const mockMovies: Movie[] = [
         url: '/videos/pulp-fiction-480p.mp4',
         label: '480P 清晰',
         bitrate: 1000
+      }
+    ],
+    subtitles: [
+      {
+        id: 'zh',
+        language: 'zh',
+        label: '中文',
+        url: '/api/subtitles/5/zh.vtt'
+      },
+      {
+        id: 'en',
+        language: 'en',
+        label: 'English',
+        url: '/api/subtitles/5/en.vtt'
       }
     ]
   }
